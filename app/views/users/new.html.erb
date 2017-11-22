@@ -1,6 +1,6 @@
 
 
-<div>
+<div class="user_form">
   <%=form_for @user do |f| %>
     <div class="field">
       <%= f.text_field :first_name, placeholder: "First name" %>
@@ -8,13 +8,13 @@
     <div class="field">
       <%= f.text_field :last_name, placeholder: "Last name" %>
     </div>
-    <div>
+    <div class="field">
       <%= f.password_field :password, placeholder: "Password" %>
     </div>
-    <div>
+    <div class="field">
       <%= f.password_field :password_confirmation, placeholder: "Password confirmation" %>
     </div>
-    <div>
+    <div class="field">
       <%= f.submit "Submit", class: "button is-primary" %>
     </div>
   <% end %>
